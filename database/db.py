@@ -1,7 +1,3 @@
-"""
-Database Manager Module
-Handles all database operations for the Interview Tracker application
-"""
 
 import sqlite3
 import os
@@ -248,4 +244,5 @@ class DatabaseManager:
         )
         rows = cursor.fetchall()
         conn.close()
+
         return [dict(row) for row in rows]
